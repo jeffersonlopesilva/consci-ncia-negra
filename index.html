@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página informativa e educativa sobre o Dia Nacional de Zumbi e da Consciência Negra.">
+    <title>Consciência Negra — História, Resistência e Cultura</title>
+    <style>
+        /* Reset básico e variáveis de cores */
+        :root {
+            --cor-fundo: #fdf8f5;
+            --cor-texto: #221c18;
+            --cor-primaria: #8c3b19;   /* Terracota */
+            --cor-secundaria: #d99b26; /* Dourado / Ocre */
+            --cor-escura: #1a1412;     /* Marrom quase preto */
+            --cor-card: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto);
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho e Navegação */
+        header {
+            background-color: var(--cor-escura);
+            color: #ffffff;
+            padding: 1.5rem 2rem;
+            border-bottom: 5px solid var(--cor-secundaria);
+        }
+
+        nav {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--cor-secundaria);
+            letter-spacing: 1px;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .menu a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .menu a:hover {
+            color: var(--cor-secundaria);
+        }
+
+        /* Seção Hero (Destaque Principal) */
+        .hero {
+            background: linear-gradient(135deg, var(--cor-primaria), var(--cor-escura));
+            color: #ffffff;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: 0 auto 1.5rem auto;
+            font-size: 1.15rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--cor-secundaria);
+            color: var(--cor-escura);
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: opacity 0.3s;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        /* Conteúdo Principal */
+        main {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            margin-bottom: 3.5rem;
+        }
+
+        h2 {
+            color: var(--cor-primaria);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            border-left: 5px solid var(--cor-secundaria);
+            padding-left: 0.75rem;
+        }
+
+        /* Grid de Cards */
+        .grid-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .card {
+            background-color: var(--cor-card);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+            border-top: 4px solid var(--cor-primaria);
+        }
+
+        .card h3 {
+            color: var(--cor-escura);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Linha do Tempo */
+        .timeline-item {
+            background-color: var(--cor-card);
+            padding: 1rem 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: 6px;
+            border-left: 4px solid var(--cor-primaria);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .timeline-item strong {
+            color: var(--cor-primaria);
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: var(--cor-escura);
+            color: #cccccc;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            border-top: 4px solid var(--cor-primaria);
+        }
+
+        /* Responsividade */
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <nav>
+            <div class="logo">20 DE NOVEMBRO</div>
+            <ul class="menu">
+                <li><a href="#historia">História</a></li>
+                <li><a href="#personalidades">Personalidades</a></li>
+                <li><a href="#marcos">Marcos Legais</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner Principal -->
+    <section class="hero">
+        <h1>Dia Nacional de Zumbi e da Consciência Negra</h1>
+        <p>Um marco de reflexão sobre a resistência histórica, a valorização da cultura afro-brasileira e a luta contínua pela igualdade racial no Brasil.</p>
+        <a href="#historia" class="btn">Explorar História</a>
+    </section>
+
+    <!-- Corpo da Página -->
+    <main>
+        <!-- Seção 1: História -->
+        <section id="historia">
+            <h2>Por que 20 de Novembro?</h2>
+            <p>A data marca o dia da morte de <strong>Zumbi dos Palmares</strong>, em 1695, líder do maior quilombo do período colonial brasileiro. Na década de 1970, o Movimento Negro resgatou o dia 20 de novembro como símbolo de resistência ativa e protagonismo negro na luta pela liberdade, contrapondo-se à narrativa oficial do 13 de maio.</p>
+        </section>
+
+        <!-- Seção 2: Personalidades -->
+        <section id="personalidades">
+            <h2>Personalidades Históricas</h2>
+            <div class="grid-cards">
+                <article class="card">
+                    <h3>Zumbi dos Palmares</h3>
+                    <p>Último líder do Quilombo dos Palmares, tornou-se o maior símbolo de resistência contra a escravidão no Brasil colonial.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Dandara dos Palmares</h3>
+                    <p>Guerreira e estrategista fundamental na defesa de Palmares, lutou ativamente contra o sistema escravocrata.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Luís Gama</h3>
+                    <p>Advogado autodidata, jornalista e escritor abolicionista que libertou centenas de pessoas escravizadas nos tribunais.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Carolina Maria de Jesus</h3>
+                    <p>Escritora mineira autora de "Quarto de Despejo", obra fundamental da literatura brasileira que retrata a realidade das periferias.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Seção 3: Marcos Legais -->
+        <section id="marcos">
+            <h2>Conquistas e Marcos Legais</h2>
+            <div class="timeline-item">
+                <strong>1989 — Lei nº 7.716:</strong> Define e criminaliza os crimes resultantes de preconceito de raça ou de cor no Brasil.
+            </div>
+            <div class="timeline-item">
+                <strong>2003 — Lei nº 10.639:</strong> Torna obrigatório o ensino da História e Cultura Afro-Brasileira nas escolas de ensino fundamental e médio.
+            </div>
+            <div class="timeline-item">
+                <strong>2011 — Lei nº 12.519:</strong> Institui oficialmente o Dia Nacional de Zumbi e da Consciência Negra.
+            </div>
+            <div class="timeline-item">
+                <strong>2023 — Feriado Nacional:</strong> Sancionada a lei que transforma o dia 20 de novembro em feriado nacional em todo o território brasileiro.
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Projeto Educativo — Consciência Negra e Valorização Afro-Brasileira.</p>
+    </footer>
+
+</body>
+</html>
